@@ -67,6 +67,33 @@ Run identically on both sites, outcomes compared as JSON:
 | Head                     | Title, description, robots, favicon         | Plus canonical, Open Graph/Twitter, theme-color, JSON-LD | SEO and sharing; nothing visible changes               |
 | Footer year              | Computed per request                        | Computed at build time                                   | Static export; rebuild to roll the year over           |
 
+## Lighthouse (local production build)
+
+Measured 2026-11-11 with Lighthouse 13.6.0: default mobile preset (simulated
+throttling), headless Chrome 156, 3 runs per page. The export was served from
+this machine with Brotli and immutable caching, **not** from the live host, so
+re-run against the deployed URL before quoting live numbers.
+
+| Page       | Performance | Accessibility | Best practices | SEO | Largest paint | Total blocking | CLS | Page weight |
+| ---------- | ----------- | ------------- | -------------- | --- | ------------- | -------------- | --- | ----------- |
+| `/`        | 82–85       | 96            | 100            | 69  | 4.4–4.5 s     | 52–167 ms      | 0   | 2,067 KiB   |
+| `/contact` | 100         | 96            | 100            | 69  | 0.8 s         | 48–65 ms       | 0   | 169 KiB     |
+
+What holds the scores back:
+
+- **SEO 69 is intentional.** The preview sends `noindex, nofollow` and
+  `robots.txt` disallows everything ("Page is blocked from indexing"). It clears
+  when `SITE_INDEXABLE=true` on the production domain.
+- **Home page weight and largest paint.** The photographs are served at full size
+  (up to 664 KiB each). Lighthouse estimates 1,539 KiB of savings from
+  correctly sized images; responsive variants (`srcset`) would address it.
+- **Accessibility 96: text contrast.** The muted grey `#72756c` on the paper
+  background `#f6f4ee` measures 4.26:1 (and 3.83–4.02:1 on the darker panels),
+  below the 4.5:1 WCAG AA level for small text. Fixing it means darkening a design
+  colour, so it needs sign-off.
+- Minor: about 25 KiB of unused JavaScript and 12 KiB of legacy polyfills in the
+  Next.js runtime.
+
 ## Capture notes
 
 - With GPU raster, Chrome put scaled photographs in one of two raster states at
