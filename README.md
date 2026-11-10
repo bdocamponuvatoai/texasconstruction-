@@ -142,7 +142,8 @@ The build fails if `SITE_INDEXABLE=true` while the URL still resolves to localho
 - [ ] Production domain connected; `SITE_URL` set to it; `SITE_INDEXABLE=true` set
       for Production only.
 - [ ] `robots.txt`, `sitemap.xml` and canonical URLs checked on the live domain.
-- [ ] Tested on real iOS and Android phones (so far: Chrome emulation only).
+- [ ] Tested on real iOS and Android phones, including touch (so far: desktop
+      Chrome resized to phone widths, mouse and keyboard only).
 - [ ] Lighthouse run on the live site; sitemap submitted in Google Search Console.
 
 ## CI

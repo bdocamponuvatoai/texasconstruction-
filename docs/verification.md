@@ -105,7 +105,9 @@ What holds the scores back:
 
 ## Not covered
 
-- Real phones and tablets. Mobile widths were tested with Chrome device emulation
-  only, not on iOS Safari or Android hardware.
+- Real phones and tablets, and touch input. Phone and tablet widths were tested by
+  resizing headless desktop Chrome (no touch events, no mobile user agent), with
+  mouse and keyboard interactions only. The lightbox and brief states were
+  exercised at 1280 px. Nothing was run on iOS Safari or Android hardware.
 - Firefox and Safari rendering.
 - Live-deployment checks (headers, live Lighthouse): see the deployment section of the README.
