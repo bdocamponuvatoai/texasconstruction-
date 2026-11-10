@@ -1,0 +1,388 @@
+.contact-page {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 10%;
+  padding: 80px 0 100px;
+  align-items: start;
+}
+.contact-page > aside {
+  position: sticky;
+  top: 140px;
+}
+.contact-page h1 {
+  font-size: clamp(53px, 5.3vw, 77px);
+  margin-top: 30px;
+  line-height: 1.02;
+}
+.contact-page h1 > span {
+  color: #858b7f;
+}
+.contact-page > aside > p:not(.label) {
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 345px;
+  margin-top: 24px;
+}
+.contact-direct {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin: 30px 0;
+  max-width: 340px;
+}
+.contact-direct > a {
+  font-size: 20px;
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 11px;
+}
+.contact-direct .arrow {
+  width: 18px;
+  height: 18px;
+}
+.contact-location > .label {
+  display: block;
+  margin-bottom: 16px;
+}
+.contact-location address {
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.contact-location > p {
+  font-size: 11px;
+  margin-top: 10px;
+}
+.contact-location > .text-link {
+  font-size: 10px;
+  margin-top: 15px;
+}
+.contact-small {
+  font-size: 9px !important;
+  line-height: 1.8 !important;
+  max-width: 335px !important;
+  margin-top: 27px !important;
+}
+.project-brief,
+.brief-review {
+  padding: 40px;
+  border: 1px solid var(--line);
+  background: #eeeee7;
+}
+.project-brief > .label,
+.brief-review > .label {
+  font-size: 8px;
+  margin-bottom: 25px;
+}
+.project-brief h2,
+.brief-review h2 {
+  font-size: 40px;
+  line-height: 1.08;
+  margin-bottom: 27px;
+}
+.project-brief fieldset {
+  border: 0;
+  padding: 0;
+  margin: 30px 0;
+}
+.project-brief legend {
+  font-size: 12px;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.type-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.type-options > label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--paper);
+  border: 1px solid #cbd0c2;
+  padding: 12px;
+  cursor: pointer;
+}
+.type-options input {
+  width: 15px;
+  height: 15px;
+  accent-color: var(--ink);
+  margin: 0;
+}
+.type-options span {
+  font-size: 11px;
+  font-weight: 400;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+.project-brief label {
+  display: block;
+  font-size: 11px;
+  font-weight: 500;
+}
+.project-brief .type-options > label {
+  display: flex;
+}
+.project-brief label > small {
+  float: right;
+  color: var(--muted);
+  font-size: 8px;
+  font-weight: 400;
+}
+.project-brief input:not([type="radio"]),
+.project-brief select,
+.project-brief textarea {
+  width: 100%;
+  min-width: 0;
+  background: var(--paper);
+  border: 1px solid #cbd0c2;
+  padding: 13px 11px;
+  margin-top: 10px;
+  font-size: 12px;
+  border-radius: 0;
+  line-height: 1.5;
+  min-height: 46px;
+}
+.project-brief input::placeholder,
+.project-brief textarea::placeholder {
+  color: #7e8676;
+  opacity: 1;
+}
+.project-brief textarea {
+  resize: vertical;
+  min-height: 125px;
+}
+.project-brief > label {
+  margin-top: 25px;
+}
+.form-note {
+  font-size: 10px;
+  line-height: 1.8;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  margin-top: 26px;
+  margin-bottom: 22px;
+}
+.form-privacy {
+  display: block;
+  font-size: 8px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  margin-top: 20px;
+  color: var(--muted);
+}
+.inspiration-note {
+  background: #dfe6da;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 13px;
+  line-height: 1.5;
+}
+.inspiration-note > button {
+  font-size: 21px;
+  border: 0;
+  background: none;
+  min-height: 30px;
+  min-width: 30px;
+}
+.brief-review > p:not(.label) {
+  font-size: 12px;
+}
+.brief-review dl {
+  margin: 25px 0 30px;
+}
+.brief-review dl > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  border-bottom: 1px solid var(--line);
+  padding: 13px 0;
+  font-size: 12px;
+}
+.brief-review dt {
+  color: var(--muted);
+}
+.brief-review dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+}
+.brief-review .form-note {
+  font-size: 10px !important;
+}
+.brief-actions {
+  display: flex;
+  gap: 30px;
+}
+.brief-actions > button {
+  font-size: 11px;
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--ink);
+  padding: 5px 0;
+}
+.download-status {
+  font-size: 10px !important;
+  line-height: 1.8;
+  min-height: 18px;
+  margin-top: 20px;
+}
+@media (max-width: 1150px) {
+  .contact-page {
+    gap: 6%;
+  }
+  .project-brief,
+  .brief-review {
+    padding: 32px;
+  }
+}
+@media (max-width: 900px) {
+  .contact-page {
+    grid-template-columns: 1fr;
+    gap: 45px;
+    padding: 60px 0 75px;
+  }
+  .contact-page > aside {
+    position: static;
+  }
+  .contact-page h1 {
+    font-size: 76px;
+  }
+  .contact-page > aside > p:not(.label) {
+    max-width: 530px;
+  }
+  .contact-direct {
+    max-width: 530px;
+  }
+  .contact-small {
+    max-width: 530px !important;
+  }
+  .project-brief,
+  .brief-review {
+    padding: 40px;
+  }
+  .project-brief h2 {
+    font-size: 43px;
+  }
+}
+@media (max-width: 650px) {
+  .contact-page {
+    padding: 45px 0 60px;
+    gap: 35px;
+  }
+  .contact-page > aside > .label {
+    font-size: 7px;
+  }
+  .contact-page h1 {
+    font-size: 64px;
+    margin-top: 25px;
+  }
+  .contact-page > aside > p:not(.label) {
+    font-size: 13px;
+    line-height: 1.85;
+  }
+  .contact-direct {
+    margin: 28px 0;
+  }
+  .contact-direct > a {
+    font-size: 20px;
+  }
+  .contact-location > .label {
+    font-size: 7px;
+    margin-bottom: 15px;
+  }
+  .contact-location address {
+    font-size: 12px;
+  }
+  .contact-small {
+    font-size: 9px !important;
+  }
+  .project-brief,
+  .brief-review {
+    padding: 27px 20px;
+  }
+  .project-brief > .label,
+  .brief-review > .label {
+    font-size: 7px;
+    letter-spacing: 0.1em;
+    margin-bottom: 23px;
+  }
+  .project-brief h2,
+  .brief-review h2 {
+    font-size: 36px;
+  }
+  .type-options {
+    gap: 8px;
+  }
+  .type-options > label {
+    padding: 12px 9px;
+    gap: 7px;
+  }
+  .type-options span {
+    font-size: 10px;
+  }
+  .type-options input {
+    height: 14px;
+    width: 14px;
+    flex-shrink: 0;
+  }
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .project-brief input:not([type="radio"]),
+  .project-brief select,
+  .project-brief textarea {
+    font-size: 16px;
+    padding: 12px 10px;
+  }
+  .project-brief label {
+    font-size: 11px;
+  }
+  .project-brief label > small {
+    font-size: 7px;
+  }
+  .form-note {
+    font-size: 9px;
+    line-height: 1.85;
+    margin-top: 24px;
+    padding-top: 19px;
+  }
+  .project-brief > .button {
+    width: 100%;
+    gap: 20px;
+  }
+  .brief-review dl > div {
+    grid-template-columns: 1fr 1.8fr;
+    gap: 15px;
+    font-size: 11px;
+  }
+  .brief-review .button {
+    width: 100%;
+    gap: 15px;
+    font-size: 11px;
+  }
+  .brief-review .form-note {
+    font-size: 9px !important;
+  }
+  .brief-actions {
+    gap: 25px;
+  }
+  .brief-actions > button {
+    font-size: 10px;
+  }
+  .download-status {
+    font-size: 9px !important;
+  }
+}

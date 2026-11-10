@@ -1,0 +1,87 @@
+.recognition-list {
+  border-top: 1px solid var(--line);
+}
+.recognition-list > a {
+  display: grid;
+  grid-template-columns: 0.5fr 2.5fr 30px;
+  gap: 45px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--line);
+  align-items: center;
+  transition: background 0.2s;
+}
+.recognition-list > a:hover {
+  background: #eeeee5;
+}
+.recognition-year {
+  font-size: 24px;
+  line-height: 1.4;
+  align-self: start;
+  font-weight: 400;
+}
+.recognition-year small {
+  display: block;
+  text-transform: uppercase;
+  font-size: 8px;
+  letter-spacing: 0.11em;
+  margin-top: 8px;
+  color: var(--muted);
+}
+.recognition-list .label {
+  font-size: 8px;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 10px;
+}
+.recognition-list h3 {
+  font-size: 29px;
+  line-height: 1.2;
+  letter-spacing: -0.035em;
+}
+.recognition-list p {
+  font-size: 13px;
+  line-height: 1.8;
+  margin-top: 17px;
+  max-width: 630px;
+}
+@media (max-width: 900px) {
+  .recognition-list > a {
+    gap: 30px;
+    grid-template-columns: 0.5fr 2fr 25px;
+  }
+  .recognition-list h3 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 650px) {
+  .recognition-list > a {
+    grid-template-columns: 50px 1fr 18px;
+    gap: 20px;
+    padding: 24px 0;
+  }
+  .recognition-year {
+    font-size: 17px;
+  }
+  .recognition-year small {
+    font-size: 6px;
+    letter-spacing: 0.05em;
+    margin-top: 7px;
+  }
+  .recognition-list .label {
+    font-size: 7px;
+    margin-bottom: 10px;
+  }
+  .recognition-list h3 {
+    font-size: 22px;
+    line-height: 1.2;
+  }
+  .recognition-list > a > .arrow {
+    width: 18px;
+    height: 18px;
+  }
+  .recognition-list p {
+    font-size: 11px;
+    line-height: 1.9;
+    margin-top: 14px;
+  }
+}

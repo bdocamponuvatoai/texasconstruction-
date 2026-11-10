@@ -1,0 +1,59 @@
+.approach-section {
+  background: var(--soft);
+  padding: 90px 0;
+}
+.approach-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 10%;
+}
+.approach-grid > .label {
+  margin-bottom: 30px;
+}
+.approach-grid h2 {
+  margin: 25px 0;
+  font-size: clamp(36px, 3.6vw, 52px);
+}
+.approach-intro {
+  font-size: 14px;
+  max-width: 370px;
+  line-height: 1.85;
+  margin-bottom: 30px;
+}
+@media (max-width: 1150px) {
+  .approach-grid {
+    gap: 7%;
+    grid-template-columns: 1fr 1.1fr;
+  }
+}
+@media (max-width: 900px) {
+  .approach-section {
+    padding: 65px 0;
+  }
+  .approach-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+  .approach-grid h2 {
+    font-size: 42px;
+  }
+  .approach-intro {
+    max-width: 600px;
+  }
+}
+@media (max-width: 650px) {
+  .approach-section {
+    padding: 52px 0;
+  }
+  .approach-grid {
+    gap: 35px;
+  }
+  .approach-grid h2 {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+  .approach-intro {
+    font-size: 13px;
+    margin-bottom: 25px;
+  }
+}

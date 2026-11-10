@@ -1,0 +1,117 @@
+.contact-callout {
+  background: var(--blue);
+  padding: 65px 0;
+}
+.callout-inner > .label {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 36px;
+}
+.callout-inner > a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.callout-inner h2 {
+  font-size: clamp(62px, 8.3vw, 120px);
+  line-height: 1;
+  letter-spacing: -0.065em;
+}
+.callout-arrow {
+  width: 130px;
+  height: 130px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #778b86;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+.callout-arrow > .arrow {
+  width: 65px;
+  height: 65px;
+  stroke-width: 1;
+}
+.callout-inner > a:hover .callout-arrow {
+  background: #f6f4ee;
+}
+.callout-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 1px solid #9eafaa;
+}
+.callout-bottom > p {
+  color: #4d6058;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.callout-bottom > span {
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  line-height: 1.8;
+  text-align: right;
+}
+@media (max-width: 900px) {
+  .contact-callout {
+    padding: 55px 0;
+  }
+  .callout-inner h2 {
+    font-size: 76px;
+  }
+  .callout-arrow {
+    width: 100px;
+    height: 100px;
+  }
+  .callout-arrow > .arrow {
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 650px) {
+  .contact-callout {
+    padding: 45px 0;
+  }
+  .callout-inner > .label {
+    font-size: 7px;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .callout-inner .cross {
+    width: 16px;
+    height: 16px;
+  }
+  .callout-inner > a {
+    gap: 20px;
+  }
+  .callout-inner h2 {
+    font-size: clamp(44px, 11vw, 68px);
+    letter-spacing: -0.06em;
+  }
+  .callout-arrow {
+    height: 61px;
+    width: 61px;
+    flex-shrink: 0;
+  }
+  .callout-arrow > .arrow {
+    width: 32px;
+    height: 32px;
+  }
+  .callout-bottom {
+    display: block;
+    margin-top: 30px;
+    padding-top: 23px;
+  }
+  .callout-bottom > p {
+    font-size: 12px;
+  }
+  .callout-bottom > span {
+    display: block;
+    text-align: left;
+    font-size: 8px;
+    margin-top: 25px;
+  }
+}

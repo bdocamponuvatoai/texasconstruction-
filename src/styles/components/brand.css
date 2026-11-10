@@ -1,0 +1,27 @@
+.logo {
+  display: block;
+  flex-shrink: 0;
+  width: 190px;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
+.logo-footer {
+  width: 260px;
+}
+@media (max-width: 1150px) {
+  .logo {
+    width: 170px;
+  }
+}
+@media (max-width: 900px) {
+  .logo {
+    width: 175px;
+  }
+}
+@media (max-width: 650px) {
+  .logo {
+    width: 156px;
+  }
+}

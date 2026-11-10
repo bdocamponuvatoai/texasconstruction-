@@ -1,0 +1,23 @@
+.error-page {
+  padding: 85px 0 120px;
+}
+.error-page > .label {
+  margin-bottom: 25px;
+}
+.error-page > p:not(.label) {
+  margin: 25px 0 30px;
+}
+.error-page h1 {
+  font-size: 85px;
+}
+@media (max-width: 650px) {
+  .error-page {
+    padding: 55px 0 75px;
+  }
+  .error-page h1 {
+    font-size: 62px;
+  }
+  .error-page > p:not(.label) {
+    font-size: 13px;
+  }
+}

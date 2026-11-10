@@ -1,0 +1,152 @@
+.about-office {
+  height: 440px;
+  overflow: hidden;
+}
+.about-office > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.about-copy {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12%;
+  padding: 100px 0;
+}
+.about-copy .label {
+  margin-bottom: 25px;
+}
+.about-copy p:not(.label) {
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 22px;
+}
+.founder {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 12%;
+  padding-bottom: 95px;
+}
+.founder > img {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+  object-position: center top;
+}
+.founder .label {
+  margin-bottom: 24px;
+}
+.founder h2 {
+  margin-bottom: 26px;
+}
+.founder p:not(.label) {
+  font-size: 15px;
+  max-width: 440px;
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+.careers-strip {
+  border-top: 1px solid var(--line);
+  padding: 70px 0 95px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 40px;
+}
+.careers-strip .label {
+  margin-bottom: 25px;
+}
+@media (max-width: 1150px) {
+  .founder > img {
+    height: 540px;
+  }
+}
+@media (max-width: 900px) {
+  .about-office {
+    height: 350px;
+  }
+  .about-copy {
+    padding: 70px 0;
+    gap: 8%;
+  }
+  .about-copy h2 {
+    font-size: 40px;
+  }
+  .about-copy p:not(.label) {
+    font-size: 13px;
+  }
+  .founder {
+    gap: 8%;
+    padding-bottom: 70px;
+  }
+  .founder > img {
+    height: 450px;
+  }
+  .founder h2 {
+    font-size: 36px;
+  }
+  .founder p:not(.label) {
+    font-size: 13px;
+  }
+  .careers-strip {
+    padding: 55px 0 75px;
+  }
+  .careers-strip h2 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 650px) {
+  .about-office {
+    height: 300px;
+  }
+  .about-office > img {
+    object-position: 65% center;
+  }
+  .about-copy {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 50px 0;
+  }
+  .about-copy h2 {
+    font-size: 38px;
+  }
+  .about-copy .label {
+    margin-bottom: 22px;
+  }
+  .about-copy p:not(.label) {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+  .founder {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-bottom: 55px;
+  }
+  .founder > img {
+    height: 450px;
+    object-position: center top;
+  }
+  .founder h2 {
+    font-size: 39px;
+    margin-bottom: 24px;
+  }
+  .founder .label {
+    margin-bottom: 20px;
+  }
+  .founder p:not(.label) {
+    font-size: 13px;
+    max-width: none;
+  }
+  .careers-strip {
+    display: block;
+    padding: 45px 0 55px;
+  }
+  .careers-strip h2 {
+    font-size: 36px;
+  }
+  .careers-strip .button {
+    margin-top: 28px;
+  }
+}

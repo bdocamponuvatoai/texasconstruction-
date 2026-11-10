@@ -1,0 +1,20 @@
+.label {
+  font-size: 9px;
+  letter-spacing: 0.13em;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--ink);
+  text-transform: uppercase;
+}
+.section-index {
+  margin-right: 17px;
+  color: var(--accent);
+}
+@media (max-width: 650px) {
+  .label {
+    font-size: 8px;
+  }
+  .section-index {
+    margin-right: 12px;
+  }
+}

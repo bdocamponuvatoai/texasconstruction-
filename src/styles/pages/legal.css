@@ -1,0 +1,44 @@
+.legal {
+  max-width: 880px;
+  padding: 80px 0 100px;
+}
+.legal > .label {
+  margin-bottom: 30px;
+}
+.legal h1 {
+  font-size: 80px;
+  margin-bottom: 50px;
+}
+.legal h2 {
+  font-size: 28px;
+  letter-spacing: -0.035em;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+.legal > p:not(.label) {
+  font-size: 14px;
+  line-height: 1.9;
+}
+.legal .text-link {
+  margin-top: 35px;
+}
+@media (max-width: 650px) {
+  .legal {
+    padding: 45px 0 60px;
+  }
+  .legal > .label {
+    font-size: 7px;
+    margin-bottom: 25px;
+  }
+  .legal h1 {
+    font-size: clamp(40px, 12vw, 62px);
+    margin-bottom: 35px;
+  }
+  .legal h2 {
+    font-size: 25px;
+    margin-top: 30px;
+  }
+  .legal > p:not(.label) {
+    font-size: 13px;
+  }
+}

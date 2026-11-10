@@ -1,0 +1,59 @@
+.page-heading {
+  padding: 85px 0 65px;
+}
+.page-heading > .label {
+  margin-bottom: 32px;
+}
+.page-heading h1 > span {
+  color: #858b7f;
+}
+.page-intro {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 35px;
+}
+.page-intro > p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+.page-intro > .cross {
+  width: 32px;
+  height: 32px;
+}
+@media (max-width: 900px) {
+  .page-heading {
+    padding: 65px 0 50px;
+  }
+  .page-heading h1 {
+    font-size: 77px;
+  }
+  .page-intro > p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 650px) {
+  .page-heading {
+    padding: 45px 0 40px;
+  }
+  .page-heading > .label {
+    font-size: 7px;
+    margin-bottom: 25px;
+  }
+  .page-heading h1 {
+    font-size: clamp(48px, 12vw, 76px);
+  }
+  .page-intro {
+    margin-top: 27px;
+    gap: 25px;
+  }
+  .page-intro > p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  .page-intro > .cross {
+    width: 23px;
+    height: 23px;
+  }
+}

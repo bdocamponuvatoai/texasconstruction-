@@ -1,0 +1,94 @@
+.recognition-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 8%;
+  background: var(--soft);
+  padding: 35px;
+}
+.recognition-hero > img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.recognition-hero > div {
+  padding: 20px 35px 20px 0;
+}
+.recognition-hero .label {
+  display: block;
+  margin-bottom: 24px;
+}
+.recognition-hero h2 {
+  margin-bottom: 25px;
+}
+.recognition-hero p {
+  font-size: 14px;
+  line-height: 1.9;
+  margin-bottom: 25px;
+}
+.recognition-page {
+  padding: 80px 0 100px;
+}
+.recognition-page > .text-link {
+  margin-top: 35px;
+}
+@media (max-width: 1150px) {
+  .recognition-hero {
+    padding: 25px;
+    gap: 6%;
+  }
+  .recognition-hero > img {
+    height: 450px;
+  }
+  .recognition-hero > div {
+    padding-right: 10px;
+  }
+}
+@media (max-width: 900px) {
+  .recognition-hero {
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    padding: 25px;
+  }
+  .recognition-hero > img {
+    height: 410px;
+  }
+  .recognition-hero h2 {
+    font-size: 36px;
+  }
+  .recognition-hero p {
+    font-size: 12px;
+  }
+  .recognition-hero .text-link {
+    font-size: 10px;
+    gap: 15px;
+  }
+}
+@media (max-width: 650px) {
+  .recognition-hero {
+    display: block;
+    padding: 20px;
+  }
+  .recognition-hero > img {
+    height: 330px;
+  }
+  .recognition-hero > div {
+    padding: 30px 5px 8px;
+  }
+  .recognition-hero h2 {
+    font-size: 39px;
+  }
+  .recognition-hero p {
+    font-size: 13px;
+  }
+  .recognition-hero .text-link {
+    font-size: 11px;
+  }
+  .recognition-page {
+    padding: 45px 0 55px;
+  }
+  .recognition-page > .text-link {
+    font-size: 11px;
+    gap: 25px;
+  }
+}
